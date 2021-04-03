@@ -237,5 +237,9 @@ module Binance
                 action: :get, endpoint: :dust_log }
             ].freeze
         end
+        
+        class TEST_REST_FUTURE
+          METHODS = REST_FUTURE::METHODS
+        end
     end
 end

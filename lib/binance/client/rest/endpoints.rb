@@ -83,6 +83,9 @@ module Binance
                 dust_log:            'v1/userAssetDribbletLog.html'
             }.freeze
         end
-
+        
+        class TEST_REST_FUTURE
+          ENDPOINTS = REST_FUTURE::ENDPOINTS
+        end
     end
 end
