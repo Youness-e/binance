@@ -60,6 +60,7 @@ module Binance
                 user_trades:         'v1/userTrades',
                 test_order:          'v1/order/test',
                 user_data_stream:    'v1/userDataStream',
+                margin_type:         'v1/marginType',
                 withdraw:            'v1/withdraw.html',
 
                 # Withdraw API Endpoints

@@ -177,6 +177,12 @@ module Binance
                 # #close_stream!
                 { name: :close_stream!, client: :verified,
                 action: :delete, endpoint: :user_data_stream },
+                # # leverage
+                { name: :leverage, client: :signed,
+                action: :post, endpoint: :leverage },
+                # # Change Margin Type 
+                { name: :margin_type, client: :signed,
+                action: :post, endpoint: :margin_type },
 
                 # Withdraw API Endpoints
                 # # funding_rate
@@ -185,9 +191,6 @@ module Binance
                 # # income
                 { name: :income, client: :signed,
                 action: :get, endpoint: :income },
-                # # leverage
-                { name: :leverage, client: :signed,
-                action: :get, endpoint: :leverage },
                 # # listenKey
                 { name: :listenKey, client: :signed,
                 action: :post, endpoint: :listenKey },
@@ -233,7 +236,6 @@ module Binance
                 { name: :dust_log, client: :withdraw,
                 action: :get, endpoint: :dust_log }
             ].freeze
-
         end
     end
 end

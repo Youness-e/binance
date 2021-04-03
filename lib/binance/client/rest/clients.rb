@@ -3,7 +3,7 @@ require 'faraday_middleware'
 module Binance
   module Client
     class REST
-            BASE_URL = 'https://api.binance.com'.freeze
+       BASE_URL = 'https://api.binance.com'.freeze
 
       def public_client(adapter)
         Faraday.new(url: "#{BASE_URL}/api") do |conn|
