@@ -103,6 +103,10 @@ module Binance
             ].freeze
         end
 
+        class TEST_REST
+          METHODS = REST::METHODS
+        end
+
         class REST_FUTURE
             METHODS = [
                 # Public API Methods
